@@ -1,38 +1,50 @@
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
+@font-face {
+  font-family:Uniform;
+  src: url(./Uniform.ttf);
 }
 
-.navbar {
-    background-color: #004b87; /* Couleur de fond */
-    color: white; /* Couleur du texte */
-    height: 50px; /* Hauteur de la barre de navigation */
-    display: flex;
-    align-items: center;
+:root{
+  --color-primary:#186CB0;
+  --color-white:white;
+  --color-font1:#ECECEC;
+  --color-font2:#ECECEC;
+  --color-bleu:#186CB0;
+  --color-rouge:#D03737;
+  --color-jaune:#FFEA61;
+  --color-violet:#6D27A2;
+  --color-brun:#794808;
 }
-
-.container {
-    width: 100%;
-    padding: 0 20px;
-    display: flex;
-    justify-content: space-between;
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-.brand-title {
-    font-size: 24px; /* Taille du texte du titre */
-    font-weight: bold;
-    margin-top: 10px;
+body{
+  background-color: white;
 }
-
-.navbar-links ul {
-    list-style: none; /* Enlève les puces des listes */
-    display: flex;
-    gap: 20px; /* Espace entre les liens */
+/* header */
+h1{
+  text-align: center ;
 }
-
-.navbar-links a {
-    text-decoration: none; /* Enlève le soulignement des liens */
-    color: white; /* Couleur du texte des liens */
+header{
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  padding: 10px;
+  font-family: Uniform;
+  display: flex;
+  }
+.imput_header{
+  
+  max-width: 400px;
+  margin: 10px auto;
+  display :flex;
 }
-
-/* Ajoute tes propres styles pour les états hover et active des liens ici */
+.button{
+  background-color: var(--color-primary);
+  padding: 10px;
+  margin: 10px;
+  margin-left: 10px;
+}
+.input{
+  width: 100%;
+}
